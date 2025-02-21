@@ -1,0 +1,28 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  margin: auto 0;
+}
+
+p {
+  margin: .5rem;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.vh {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  block-size: 1px;
+  inline-size: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+}

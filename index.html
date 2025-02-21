@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="us-en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>OSRX</title>
+
+    <link rel="stylesheet" href="./main.css">
+
+    <script src="https://unpkg.com/htmx.org@2.0.4" crossorigin="anonymous">
+    </script>
+  </head>
+
+  <body hx-boost=true>
+    <h1>OSRX</h1>
+
+    <button 
+      hx-get="/encounters"
+      hx-target="#encounter_results"
+      hx-swap="outerHTML">
+        Roll Encounter
+    </button>
+
+    <div id="encounter_results">
+    </div>
+  </body>
+</html>
