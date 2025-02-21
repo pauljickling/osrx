@@ -23,7 +23,19 @@
         Roll Encounter
     </button>
 
+    <div id="encounterRoll"></div>
     <div id="encounter_results">
+
     </div>
   </body>
+  <script>
+    function rollDie(n) {
+      return Math.floor(Math.random() * n) + 1;
+    }
+    const button = document.querySelector("button");
+    button.addEventListener("click", (event) => {
+      let num = rollDie(6);
+    let encounterNum = document.querySelector("#encounterRoll").textContent = num;
+    })
+  </script>
 </html>
