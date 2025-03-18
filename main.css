@@ -10,12 +10,37 @@ body {
 }
 
 p {
-  margin: .5rem;
   font-size: 18px;
+  font-family: sans-serif;
+}
+
+li {
+  font-family: sans-serif;
 }
 
 img {
   max-width: 100%;
+}
+
+button {
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  padding: 0.4em 2em;
+  border-radius: 0.3em;
+  background: radial-gradient( 100% 100% at 100% 0%, #89E5FF 0%, #5468FF 100% );
+}
+
+div.flexbox {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 5px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .vh {

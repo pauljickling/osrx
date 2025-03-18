@@ -14,18 +14,20 @@
   </head>
 
   <body hx-boost=true>
-    <h1>OSRX</h1>
+    <div class="flexbox">
+      <h1>OSRX</h1>
 
-    <button 
-      hx-get="/encounters"
-      hx-target="#encounter_results"
-      hx-swap="outerHTML">
-        Roll Encounter
-    </button>
+      <button
+        hx-get="/encounters"
+        hx-target="#encounter_results"
+        hx-swap="outerHTML">
+          Roll Encounter
+      </button>
 
-    <div id="encounterRoll"></div>
-    <div id="encounter_results">
+      <p id="encounterRoll"></p>
+      <div id="encounter_results">
 
+      </div>
     </div>
   </body>
   <script>
@@ -35,7 +37,7 @@
     const button = document.querySelector("button");
     button.addEventListener("click", (event) => {
       let num = rollDie(6);
-    let encounterNum = document.querySelector("#encounterRoll").textContent = num;
+    let encounterNum = document.querySelector("#encounterRoll").textContent = "You rolled a " + num;
     })
   </script>
 </html>
